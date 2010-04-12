@@ -44,9 +44,10 @@ rescue LoadError
     end
   end
 
-  module ActiveSupport
-    Inflector = Extlib::Inflection
-  end
+  # Do NOT clobber ActiveSupport. How Rude.
+  # module ActiveSupport
+  #   Inflector = Extlib::Inflection
+  # end
 
 end
 
